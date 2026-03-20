@@ -15,6 +15,7 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.lostinmist.network.LostInMistModVariables;
 import net.mcreator.lostinmist.init.LostInMistModEntities;
 
 import javax.annotation.Nullable;
@@ -39,8 +40,9 @@ public class SpawningProcedure {
 		double entity_z = 0;
 		double entity_y = 0;
 		double cooldown = 0;
-		if (cooldown < 0) {
-			cooldown = 20;
+		if (LostInMistModVariables.WorldVariables.get(world).Entitycooldown < 0) {
+			LostInMistModVariables.WorldVariables.get(world).Entitycooldown = 20;
+			LostInMistModVariables.WorldVariables.get(world).syncData(world);
 			if (world.getLevelData().getGameTime() == 18000) {
 				if (world instanceof ServerLevel _level) {
 					Entity entityToSpawn = LostInMistModEntities.ENTITYINVALID.get().spawn(_level, BlockPos.containing(entity_x + 80, entity_y + 0, entity_z + 80), MobSpawnType.MOB_SUMMONED);
@@ -53,9 +55,10 @@ public class SpawningProcedure {
 						_level.playLocalSound((entity.getX()), y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ambient.cave")), SoundSource.NEUTRAL, 1, 1, false);
 					}
 				}
+			} else {
+				LostInMistModVariables.WorldVariables.get(world).Entitycooldown = LostInMistModVariables.WorldVariables.get(world).Entitycooldown - 1;
+				LostInMistModVariables.WorldVariables.get(world).syncData(world);
 			}
-		} else {
-			cooldown = cooldown - 1;
 		}
 	}
 }
