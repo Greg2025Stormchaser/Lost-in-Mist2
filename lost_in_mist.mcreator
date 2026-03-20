@@ -1,5 +1,37 @@
 {
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "Events",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "events",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinmist/procedures/EventsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Events"
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {},
@@ -12,6 +44,10 @@
     "children": [
       {
         "name": "Entity.Invaild",
+        "children": []
+      },
+      {
+        "name": "Events",
         "children": []
       }
     ]
