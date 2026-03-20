@@ -130,19 +130,6 @@
         ]
       },
       "path": "~/Entity.Invaild"
-    },
-    {
-      "name": "Renderdistance",
-      "type": "code",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "renderdistance",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/lostinmist/Renderdistance.java"
-        ]
-      },
-      "path": "~/Custom elements"
     }
   ],
   "variable_elements": [],
@@ -164,10 +151,6 @@
       },
       {
         "name": "Events",
-        "children": []
-      },
-      {
-        "name": "Custom elements",
         "children": []
       }
     ]
