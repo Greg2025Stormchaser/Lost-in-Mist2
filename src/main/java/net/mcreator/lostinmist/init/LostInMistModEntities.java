@@ -22,10 +22,8 @@ import net.mcreator.lostinmist.LostInMistMod;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class LostInMistModEntities {
 	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, LostInMistMod.MODID);
-	public static final RegistryObject<EntityType<EntityinvalidEntity>> ENTITYINVALID = register("entityinvalid",
-			EntityType.Builder.<EntityinvalidEntity>of(EntityinvalidEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(EntityinvalidEntity::new)
-
-					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<EntityinvalidEntity>> ENTITYINVALID = register("entityinvalid", EntityType.Builder.<EntityinvalidEntity>of(EntityinvalidEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+			.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(EntityinvalidEntity::new).fireImmune().sized(0.6f, 1.8f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities

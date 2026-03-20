@@ -80,6 +80,37 @@
         ]
       },
       "path": "~/Entity.Invaild"
+    },
+    {
+      "name": "Spawning",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawning",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinmist/procedures/SpawningProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Entity.Invaild"
     }
   ],
   "variable_elements": [],
