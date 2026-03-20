@@ -86,15 +86,15 @@
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "spawning",
+      "registry_name": "entityinvaliddespawns",
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/lostinmist/procedures/SpawningProcedure.java"
         ],
         "dependencies": [
           {
-            "name": "entity",
-            "type": "entity"
+            "name": "x",
+            "type": "number"
           },
           {
             "name": "y",
@@ -113,19 +113,20 @@
       "path": "~/Entity.Invaild"
     },
     {
-      "name": "EntityinvalidPlayerCollidesWithThisEntity",
+      "name": "EntityinvalidNaturalEntitySpawningCondition",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "entityinvalid_player_collides_with_this_entity",
+      "registry_name": "entityinvalid_natural_entity_spawning_condition",
       "metadata": {
+        "return_type": "logic",
         "files": [
-          "src/main/java/net/mcreator/lostinmist/procedures/EntityinvalidPlayerCollidesWithThisEntityProcedure.java"
+          "src/main/java/net/mcreator/lostinmist/procedures/EntityinvalidNaturalEntitySpawningConditionProcedure.java"
         ],
         "dependencies": [
           {
-            "name": "entity",
-            "type": "entity"
+            "name": "world",
+            "type": "world"
           }
         ]
       },
