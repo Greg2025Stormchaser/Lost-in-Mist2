@@ -8,10 +8,9 @@
       "registry_name": "entityinvalid",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/lostinmist/entity/EntityinvalidEntity.java",
-          "src/main/resources/data/lost_in_mist/forge/biome_modifier/entityinvalid_biome_modifier.json",
           "src/main/resources/assets/lost_in_mist/models/item/entityinvalid_spawn_egg.json",
-          "src/main/java/net/mcreator/lostinmist/client/renderer/EntityinvalidRenderer.java"
+          "src/main/java/net/mcreator/lostinmist/client/renderer/EntityinvalidRenderer.java",
+          "src/main/java/net/mcreator/lostinmist/entity/EntityinvalidEntity.java"
         ]
       },
       "path": "~/Entity.Invaild"
@@ -46,6 +45,41 @@
         ]
       },
       "path": "~/Events"
+    },
+    {
+      "name": "EntityinvalidOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "entityinvalid_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinmist/procedures/EntityinvalidOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Entity.Invaild"
     }
   ],
   "variable_elements": [],
