@@ -1,11 +1,31 @@
 {
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "Entityinvalid",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "entityinvalid",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinmist/entity/EntityinvalidEntity.java",
+          "src/main/resources/data/lost_in_mist/forge/biome_modifier/entityinvalid_biome_modifier.json",
+          "src/main/resources/assets/lost_in_mist/models/item/entityinvalid_spawn_egg.json",
+          "src/main/java/net/mcreator/lostinmist/client/renderer/EntityinvalidRenderer.java"
+        ]
+      },
+      "path": "~/Entity.Invaild"
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {},
   "tab_element_order": {},
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "item.lost_in_mist.entityinvalid_spawn_egg": "Entity.invalid Spawn Egg",
+      "entity.lost_in_mist.entityinvalid": "Entity.invalid"
+    }
   },
   "foldersRoot": {
     "name": "~",

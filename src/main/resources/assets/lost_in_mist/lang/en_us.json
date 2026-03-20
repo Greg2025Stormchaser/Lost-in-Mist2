@@ -1,1 +1,4 @@
-{}
+{
+  "item.lost_in_mist.entityinvalid_spawn_egg": "Entity.invalid Spawn Egg",
+  "entity.lost_in_mist.entityinvalid": "Entity.invalid"
+}
