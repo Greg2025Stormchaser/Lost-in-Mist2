@@ -1,6 +1,15 @@
 
 package net.mcreator.lostinmist.client.renderer;
 
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.client.renderer.entity.layers.HumanoidArmorLayer;
+import net.minecraft.client.renderer.entity.HumanoidMobRenderer;
+import net.minecraft.client.renderer.entity.EntityRendererProvider;
+import net.minecraft.client.model.geom.ModelLayers;
+import net.minecraft.client.model.HumanoidModel;
+
+import net.mcreator.lostinmist.entity.EntityinvalidEntity;
+
 public class EntityinvalidRenderer extends HumanoidMobRenderer<EntityinvalidEntity, HumanoidModel<EntityinvalidEntity>> {
 	public EntityinvalidRenderer(EntityRendererProvider.Context context) {
 		super(context, new HumanoidModel<EntityinvalidEntity>(context.bakeLayer(ModelLayers.PLAYER)), 0.5f);
