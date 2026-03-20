@@ -111,6 +111,25 @@
         ]
       },
       "path": "~/Entity.Invaild"
+    },
+    {
+      "name": "EntityinvalidPlayerCollidesWithThisEntity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "entityinvalid_player_collides_with_this_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinmist/procedures/EntityinvalidPlayerCollidesWithThisEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Entity.Invaild"
     }
   ],
   "variable_elements": [],
